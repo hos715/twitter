@@ -1,0 +1,361 @@
+@font-face {
+    font-family: "Yekan";
+    src: url("../fonts/Yekan.eot") format("eot"), url("../fonts/Yekan.woff") format("woff"), url("../fonts/Yekan.woff") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yekan" !important;
+    /* background: url("../img/background.jpg") no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    direction: rtl;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Start-rightsidebar-style */
+
+.logopanel {
+    display: flex;
+    align-items: center;
+    padding: 1.4rem 0.8rem 2rem;
+}
+
+.imglogo {
+    width: 25px;
+    height: max-content;
+    max-height: auto;
+}
+
+.logopanel>h1 {
+    font-size: 1.2rem;
+    font-family: Yekan;
+    color: #5182ff;
+    padding-right: 0.8rem;
+}
+
+.right-sidebar-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3d3d3d;
+    text-align: center;
+}
+
+.hashtags-Panel {
+    padding: 1rem 0.8rem 0 1rem;
+    display: grid;
+}
+
+.hashtag {
+    align-items: center;
+    display: flex !important;
+    margin-bottom: .3rem;
+    padding: 0 0 !important;
+}
+
+.btn.btn-outline-primary.hashtag {
+    border-color: transparent;
+}
+
+.hashtag>img {
+    width: auto;
+    height: auto;
+}
+
+.hashtag>h6 {
+    padding: 0 0.7rem;
+    margin: 0 0;
+}
+
+/* End-rightsidebar-style */
+
+/* Start-leftsidebar-style */
+
+.avatar-section {
+    position: relative;
+    padding: .75rem 0px;
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.avatar-section>div {
+    padding-left: .7rem;
+}
+
+.avatar-section>div>h6 {
+    font-size: .95rem;
+    margin-bottom: .3rem;
+}
+
+.avatar-section>div>p {
+    font-size: .75rem;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+.pnl-account-setting {
+    display: block;
+    position: absolute;
+    background: #ffffff;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .2s;
+    width: 120px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: .1rem;
+    z-index: -1;
+    box-shadow: 0px 0px #ffffff;
+}
+
+.pnl-account-setting.show {
+    height: 77px;
+    opacity: 1;
+    z-index: 99;
+    box-shadow: 0px 1px 9px -3px #343434;
+}
+
+.pnl-account-setting a:hover {
+    text-decoration: none !important;
+}
+
+.anchor-item {
+    /* height: 25px; */
+    cursor: pointer;
+    padding: .5rem .2rem;
+    align-items: center;
+    text-decoration: none;
+    padding: .3rem;
+    border: 1px solid transparent;
+}
+
+.anchor-item:hover {
+    color: white;
+    background-color: #c4c4c4;
+    border-color: darkslateblue;
+}
+
+.anchor-item p {
+    margin: 0 0;
+}
+
+.best-twitter {
+    text-align: right;
+    margin: 1.5rem 1rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    background-color: #c4c4c4;
+}
+
+.best-twitter .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0;
+    padding: .5rem 1rem;
+    border-bottom: 1.5px solid #c1c1c1;
+}
+
+.best-twitter .hashtag {
+    margin: 0;
+    border: none;
+    border-radius: unset;
+}
+
+.best-twitter .best-twitter-profiles {
+    padding: .3rem .75rem;
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid;
+}
+
+/* 
+.best-twitter .best-twitter-profiles:not(:last-child) {
+    border-bottom: 1.2px solid #c1c1c1;
+} */
+
+.best-twitter-profiles>img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.best-twitter-profiles>div {
+    padding: 0 .7rem;
+}
+
+.best-twitter-profiles>div>h6 {
+    font-size: .95rem;
+    margin-bottom: .3rem;
+}
+
+.best-twitter-profiles>div>p {
+    direction: ltr;
+    text-align: right;
+    font-size: .75rem;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+/* End-leftsidebar-style */
+
+/* Start-Main-style */
+
+.divider-x {
+    background-color: #5182ff !important;
+    width: 100%;
+    height: 1px;
+    opacity: .5;
+}
+
+.divider-y {
+    background-color: #5182ff !important;
+    width: 1px;
+    height: 100vh;
+    opacity: .5;
+}
+
+/* Start-main-form-style */
+
+.main {
+    flex: 1;
+    background-color: #c4c4c4;
+    z-index: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.main>div {
+    background-color: #ffffff;
+}
+
+.header {
+    max-height: max-content;
+}
+
+.pnl-new-twit {
+    display: grid;
+}
+
+.new-twit {
+    padding: 1rem 1rem;
+    display: flex;
+}
+
+.txt-new-twit {
+    flex: 1;
+    padding-right: .4rem;
+    margin-right: 1rem;
+    border: none;
+    resize: none;
+    box-shadow: -1px 2px 9px -6px #747474;
+    height: 60px;
+    border-radius: 0.4rem;
+}
+
+.txt-new-twit:focus {
+    outline: -webkit-focus-ring-color none 0px;
+    outline: none;
+}
+
+.txt-new-twit:empty::before {
+    content: attr(data-placeholder);
+    color: #999999;
+}
+
+.btn-new-twit {
+    border-radius: 1.5rem !important;
+    width: 95px;
+}
+
+.image-attach {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: auto;
+    height: 20rem;
+    margin: 1rem auto;
+}
+
+div>.btn-twit-round {
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    padding: 0.3rem 0.3rem;
+    margin: 3px 0 0 1rem;
+}
+
+.twit {
+    padding: 1rem;
+    margin-top: .45rem;
+}
+
+.twit-item {
+    padding: 0rem 1.4rem 1rem 4rem;
+    width: 100%;
+}
+
+.twit-item-title {
+    display: flex;
+    padding: 0 0rem;
+}
+
+.twit-item-title p {
+    padding-right: .5rem;
+    direction: ltr;
+}
+
+.twit-item-content {
+    margin-bottom: 0;
+    overflow-wrap: break-word;
+}
+
+.like-counter {
+    padding: 0 0 0 .5rem;
+    font-size: .9rem;
+    position: relative;
+    top: 5px;
+}
+
+/* standard-style */
+
+.img-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/* ---react-bootstrap--- */
+
+nav.nav.nav-tabs>a {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-tabs .nav-link {
+    border-width: 3px !important;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    /* Safari */
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    font-weight: bold !important;
+    border-color: transparent transparent #52a5fb !important;
+    border-width: 3px !important;
+    border-radius: 3px !important;
+}
